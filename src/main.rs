@@ -116,10 +116,10 @@ async fn main() {
     // Initialize framework
     let framework = StandardFramework::new()
         .configure(|c| c
-                   .owners(owners)
-                   .prefix("f!"))
-                   .before(before)
-                   .after(after)
+            .owners(owners)
+            .prefix("f!"))
+        .before(before)
+        .after(after)
         .group(&GENERAL_GROUP);
 
     // Initialize client
